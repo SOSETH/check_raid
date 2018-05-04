@@ -3,7 +3,7 @@ Section: devel
 Priority: optional
 Maintainer: Maximilian Falkenstein <mfalkenstein@sos.ethz.ch>
 Build-Depends: debhelper (>= 9), libextutils-makemaker-cpanfile-perl,
-  libmonitoring-plugin-perl
+  libmonitoring-plugin-perl, libaliased-perl, libmodule-pluggable-perl
 Standards-Version: 3.9.8
 Homepage: https://github.com/glensc/nagios-plugin-check_raid
 Vcs-Git: https://github.com/SOSETH/check_raid.git
