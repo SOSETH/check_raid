@@ -11,5 +11,6 @@ Vcs-Browser: https://github.com/SOSETH/check_raid
 
 Package: check-raid
 Architecture: all
-Depends: ${perl:Depends}, libmonitoring-plugin-perl
+Depends: ${perl:Depends}, libextutils-makemaker-cpanfile-perl,
+  libmonitoring-plugin-perl, libaliased-perl, libmodule-pluggable-perl
 Description: Check RAID status

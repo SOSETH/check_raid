@@ -1,3 +1,9 @@
+check-raid (4.0.8-1.2) unstable; urgency=medium
+
+  * Really fix missing runtime dependencies...
+
+ -- Maximilian Falkenstein <mfalkenstein@sos.ethz.ch>  Sat, 12 May 2018 19:15:00 +0200
+
 check-raid (4.0.8-1.1) unstable; urgency=medium
 
   * Add missing runtime dependency
