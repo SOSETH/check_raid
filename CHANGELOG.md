@@ -1,4 +1,38 @@
-# check_raid changelog
+# check_raid Changelog
+
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [4.0.11] - unreleased
+
+[4.0.11]: https://github.com/glensc/nagios-plugin-check_raid/compare/4.0.10...master
+
+## [4.0.10] - 2019-05-16
+
+CHANGES:
+- Sort megacli devices numerically, [#191]
+- Fixi hpacucli to respect the `cache_fail` and bbulearn command options [#193]
+
+[#191]: https://github.com/glensc/nagios-plugin-check_raid/pull/191
+[#193]: https://github.com/glensc/nagios-plugin-check_raid/pull/193
+[4.0.10]: https://github.com/glensc/nagios-plugin-check_raid/compare/4.0.9...4.0.10
+
+## [4.0.9] - 2019-01-30
+
+CHANGES:
+- mpt-status: Enable checking of multiple mpt controllers, [#177]
+- add [sensu] support, [#178]
+- enable usage of new HP ssacli (replacing hpssacli), [#182]
+- mdstat: Check if a certain amount of spares are present [#185]
+
+[#177]: https://github.com/glensc/nagios-plugin-check_raid/pull/177
+[#178]: https://github.com/glensc/nagios-plugin-check_raid/issues/178
+[#182]: https://github.com/glensc/nagios-plugin-check_raid/pull/182
+[#185]: https://github.com/glensc/nagios-plugin-check_raid/pull/185
+[sensu]: https://sensuapp.org/docs/1.0/overview/what-is-sensu.html
+[4.0.9]: https://github.com/glensc/nagios-plugin-check_raid/compare/4.0.8...4.0.9
 
 ## [4.0.8] - 2017-09-01
 

@@ -1,6 +1,6 @@
 package App::Monitoring::Plugin::CheckRaid::Plugins::hpacucli;
 
-## hpacucli/hpssacli support
+## hpacucli/hpssacli/ssacli support
 #
 # driver developers recommend to use cciss_vol_status for monitoring,
 # hpacucli/hpssacli shouldn't be used for monitoring due they obtaining global
@@ -172,7 +172,7 @@ sub scan_luns {
 			# "array A"
 			# "array A (Failed)"
 			# "array B (Failed)"
-			if (my($a, $s) = /^\s+array (\S+)(?:\s*\((\S+)\))?$/) {
+			if (my($a, $s) = /^\s+array (\S+)(?:\s*\((\S+)\))?$/i) {
 				$index++;
 				# Offset 0 is Array own status
 				# XXX: I don't like this one: undef could be false positive
@@ -286,11 +286,11 @@ sub cstatus {
 	# print those only if not ok and configured
 	if (($s = $c->{'Cache Status'}) && $s !~ /^(OK|Not Configured)/) {
 		push(@s, "Cache: $s");
-		$this->critical;
+		$this->cache_fail;
 	}
 	if (($s = $c->{'Battery/Capacitor Status'}) && $s !~ /^(OK|Not Configured)/) {
 		push(@s, "Battery: $s");
-		$this->critical;
+		$this->bbulearn;
 	}
 
 	# start with identifyier
