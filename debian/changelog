@@ -1,3 +1,9 @@
+check-raid (4.0.11-1) unstable; urgency=medium
+
+  * Bump to latest upstream release
+
+ -- Maximilian Falkenstein <mfalkenstein@sos.ethz.ch>  Fri, 19 Jul 2019 21:37:34 +0200
+
 check-raid (4.0.8-1.2) unstable; urgency=medium
 
   * Really fix missing runtime dependencies...
