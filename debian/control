@@ -2,8 +2,11 @@ Source: check-raid
 Section: devel
 Priority: optional
 Maintainer: Maximilian Falkenstein <mfalkenstein@sos.ethz.ch>
-Build-Depends: debhelper (>= 9), libextutils-makemaker-cpanfile-perl,
-  libmonitoring-plugin-perl, libaliased-perl, libmodule-pluggable-perl
+Build-Depends: debhelper (>= 9),
+               libaliased-perl,
+               libextutils-makemaker-cpanfile-perl,
+               libmodule-pluggable-perl,
+               libmonitoring-plugin-perl
 Standards-Version: 3.9.8
 Homepage: https://github.com/glensc/nagios-plugin-check_raid
 Vcs-Git: https://github.com/SOSETH/check_raid.git
@@ -11,6 +14,9 @@ Vcs-Browser: https://github.com/SOSETH/check_raid
 
 Package: check-raid
 Architecture: all
-Depends: ${perl:Depends}, libextutils-makemaker-cpanfile-perl,
-  libmonitoring-plugin-perl, libaliased-perl, libmodule-pluggable-perl
+Depends: libaliased-perl,
+         libextutils-makemaker-cpanfile-perl,
+         libmodule-pluggable-perl,
+         libmonitoring-plugin-perl,
+         ${perl:Depends}
 Description: Check RAID status
