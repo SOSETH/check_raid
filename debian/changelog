@@ -1,3 +1,10 @@
+check-raid (4.0.11+3) UNRELEASED; urgency=medium
+
+  * Enable GitLab CI
+  * debian: Switch to "3.0 (native)"
+
+ -- Peter Keresztes Schmidt <peterke@sos.ethz.ch>  Mon, 18 May 2020 01:46:38 +0200
+
 check-raid (4.0.11-1) unstable; urgency=medium
 
   * Bump to latest upstream release
