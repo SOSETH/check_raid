@@ -1,4 +1,4 @@
-check-raid (4.0.11+3) UNRELEASED; urgency=medium
+check-raid (4.0.11+3) unstable; urgency=medium
 
   * Enable GitLab CI
   * debian: Switch to "3.0 (native)"
